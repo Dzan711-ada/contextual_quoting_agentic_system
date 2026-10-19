@@ -1,0 +1,19 @@
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+.idea/
+__pycache__/
+*.py[cod]
+runtime/
+dist/
+build/
+*.egg-info/
+.python-runtime/
+
+# Local configuration and generated files
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.log

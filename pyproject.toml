@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "contextual-quoting-agentic-system"
+version = "0.1.0"
+description = "LangGraph contextual quoting tutorial with DeepSeek and Qwen"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "langgraph==0.2.18",
+    "langgraph-checkpoint==1.0.9",
+    "langchain-core==0.3.86",
+    "langchain-openai==0.3.35",
+    "chromadb==1.5.9",
+    "pydantic==2.14.1",
+    "python-dotenv==1.2.4",
+    "typing-extensions==4.16.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["quoting_agent*"]
+
+[tool.uv]
+link-mode = "copy"
